@@ -12,7 +12,7 @@ router = APIRouter()
 def generate_payment_qr(amount: int) -> str:
     upi_id = "6260499299@okbizaxis"
     payee_name = "Tirth Ghumo"
-    note = "VR Darshan Booking"
+    
 
     upi_url = (
         f"upi://pay?"
