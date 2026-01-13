@@ -20,7 +20,7 @@ def generate_payment_qr(amount: int) -> str:
         f"&pn={payee_name}"
         f"&am={amount}"
         f"&cu=INR"
-        f"&tn={note}"
+        
     )
 
     qr = qrcode.make(upi_url)
@@ -56,6 +56,7 @@ async def calculate_vr_darshan_price(
 
     return {
         "payment_qr_url": qr_url,
+        "amount":amount,
     }
 @router.get("/manali/price")
 async def calculate_manali_price(
@@ -71,7 +72,8 @@ async def calculate_manali_price(
     session_id = str(uuid.uuid4())
 
     return {
-        "payment_qr_url": qr_url
+        "payment_qr_url": qr_url,
+        "amount":amount , 
     }
 
 
