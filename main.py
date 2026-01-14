@@ -13,7 +13,7 @@ from fastapi import BackgroundTasks
 models.Base.metadata.create_all(bind=engine) 
 
 
-origins = ["*"]
+# origins = ["*"]
 app = FastAPI()
 
 
@@ -22,9 +22,16 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs("uploads/aadhar", exist_ok=True)
 os.makedirs("uploads/profile", exist_ok=True)
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origin_regex=".*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
