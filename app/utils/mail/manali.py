@@ -171,7 +171,7 @@ Further details related to the travel itinerary, reporting schedule, accommodati
 
 Please keep this email for future reference. If any updates or additional requirements arise, our team will proactively get in touch with you.
 
-For any queries or assistance, feel free to reach out to us at "hr.tirthghumo@gmail.com" 💬.
+For any queries or assistance, feel free to reach out to us at {6260499299} .
 
 Thank you for choosing TirthGhumo 🙏
 We look forward to making your journey safe, smooth, and truly memorable ✨
